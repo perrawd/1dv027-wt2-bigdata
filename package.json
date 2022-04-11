@@ -1,0 +1,29 @@
+{
+  "name": "assignment-wt2-bigdata",
+  "contributors": [
+    "Per Rawdin <per.rawdin@student.lnu.se>"
+  ],
+  "version": "1.0.0",
+  "description": "1DV027 Assignment WT2 Big Data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production node dist/index.js",
+    "start:dev": "NODE_ENV=developement nodemon --inspect -r dotenv/config dist/index.js",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.lnu.se/1dv027/student/pr222iw/assignment-wt2-big-data"
+  },
+  "author": "Per Rawdin <pr222iw@student.lnu.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "typescript": "^4.6.3"
+  }
+}
