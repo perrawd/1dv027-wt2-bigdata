@@ -7,6 +7,7 @@
  */
 
 import { Client } from '@elastic/elasticsearch'
+import axios from 'axios'
 
 /** @type {Client} */
 /** Instantiate new elasticsearch client */
@@ -21,3 +22,14 @@ const client = new Client({
     rejectUnauthorized: false
   }
 })
+
+/**
+ * Fetches data from specified API.
+ *
+ * @param {string} url The URL to fetch the data from.
+ * @return {Object} Response object.
+ */
+async function fetchData (url) {
+  const response = await axios(url)
+  return await response.json()
+}
