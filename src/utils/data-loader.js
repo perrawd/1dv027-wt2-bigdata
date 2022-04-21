@@ -76,6 +76,20 @@ for (const language of languages) {
 
       // Add language tag for each document.
       data.forEach(document => (document.tag = language))
+
+      // Ingest data in elasticsearch.
+      const result = await client.helpers.bulk({
+        datasource: data,
+        onDocument (doc) {
+          return {
+            index: {
+              _index: process.env.ELASTIC_INDEX
+            }
+          }
+        }
+      })
+      console.log(result)
+      console.log(`Data has been ingested for quarter ${quarter + 1}, ${year}`)
     }
     console.log(`Year: ${year} completed`)
   }
