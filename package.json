@@ -23,6 +23,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
+    "jsdoc": "^3.6.10",
     "vue-template-compiler": "^2.6.14"
   }
 }
