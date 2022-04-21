@@ -31,7 +31,7 @@ const client = new Client({
  */
 async function fetchData (url) {
   const response = await axios(url)
-  return await response.json()
+  return response.data.hits
 }
 
 /**
@@ -64,14 +64,14 @@ for (const language of languages) {
         const url = `${process.env.API_URL}/search?q=${language}&historical-from=${year}${quarterStart[quarter]}&historical-to=${year}${quarterEnd[quarter]}&limit=100&offset=${offset}&resdet=brief`
         const response = await fetchData(url)
 
-        data.push(...response.hits)
+        data.push(...response)
 
         // Increment count for next page.
         count++
         offset = (count * 100) + 1
 
         // If page contains less than 100 results, stop current iteration.
-        if (response.hits.length < 100) pages = false
+        if (response.length < 100) pages = false
       }
 
       // Add language tag for each document.
