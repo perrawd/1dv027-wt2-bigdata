@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="bv-row">
+      <b-row class="header text-center">
+        <b-col></b-col>
+        <b-col cols="8">
+        </b-col>
+        <b-col></b-col>
+      </b-row>
+      <b-row class="text-center">
+        <b-col></b-col>
+        <b-col cols="8">
+        </b-col>
+        <b-col></b-col>
+      </b-row>
+      <b-row class="footer text-center">
+        <b-col></b-col>
+        <b-col cols="8">
+        </b-col>
+        <b-col></b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
