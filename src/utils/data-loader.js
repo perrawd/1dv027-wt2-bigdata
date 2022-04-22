@@ -27,7 +27,7 @@ const client = new Client({
  * Fetches data from specified API.
  *
  * @param {string} url The URL to fetch the data from.
- * @return {Object} Response object.
+ * @returns {object} Response object.
  */
 async function fetchData (url) {
   const response = await axios(url)

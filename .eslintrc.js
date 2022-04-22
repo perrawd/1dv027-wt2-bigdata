@@ -3,8 +3,12 @@ module.exports = {
   env: {
     node: true
   },
+  plugins: [
+    'jsdoc'
+  ],
   extends: [
     'plugin:vue/essential',
+    'plugin:jsdoc/recommended',
     '@vue/standard'
   ],
   parserOptions: {
