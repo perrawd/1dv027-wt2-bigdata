@@ -20,7 +20,6 @@
         <b-col cols="8">
           <div>
               <b-button pill size="sm" variant="primary">2016-2021</b-button>
-              <b-button pill size="sm" variant="secondary">Annual basis</b-button>
           </div>
           <div class="chartbox">
             <LineChart/>
@@ -31,6 +30,20 @@
       <b-row class="footer text-center">
         <b-col></b-col>
         <b-col cols="8">
+          <p class="footertext">
+            <ul>
+              <li>Built with:</li>
+              <li>Vue.js</li>
+              <li>Elasticsearch</li>
+              <li>VueBootStrap</li>
+              <li>AMS API</li>
+            </ul>
+          </p>
+          <p class="footertext">
+            <ul>
+              <li>Per Rawdin 1DV027 WT2 Big Data</li>
+            </ul>
+          </p>
         </b-col>
         <b-col></b-col>
       </b-row>
@@ -59,7 +72,21 @@ export default {
   margin-top: 60px;
 }
 
+.chartbox {
+  margin: auto;
+}
+
 .btn {
   margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footertext {
+  font-size: 11px;
 }
 </style>
