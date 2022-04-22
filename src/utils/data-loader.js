@@ -72,6 +72,8 @@ for (const language of languages) {
 
         // If page contains less than 100 results, stop current iteration.
         if (response.length < 100) pages = false
+
+        console.log(`${response.length} documents in page ${count}, ${year} has been fetched. `)
       }
 
       // Add language tag for each document.
@@ -94,3 +96,5 @@ for (const language of languages) {
     console.log(`Year: ${year} completed`)
   }
 }
+
+console.log('Script completed.')
