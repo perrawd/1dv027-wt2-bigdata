@@ -5,8 +5,28 @@
 </template>
 
 <script>
+import VueApexCharts from 'vue-apexcharts'
 
 export default {
-  name: 'LineChart'
+  name: 'LineChart',
+  components: {
+    apexcharts: VueApexCharts
+  },
+  data: function () {
+    return {
+      chartOptions: {
+        stroke: {
+          curve: 'smooth'
+        },
+        chart: {
+          id: 'basic-bar'
+        },
+        xaxis: {
+          categories: []
+        }
+      },
+      series: null
+    }
+  }
 }
 </script>
