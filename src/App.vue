@@ -4,12 +4,24 @@
       <b-row class="header text-center">
         <b-col></b-col>
         <b-col cols="8">
+          <h2>#wpjobb</h2>
+          <p>
+            Trends and amount of job ads published in the swedish job market between 2016-2021 for the <br/>most popular web development technologies according to StackOverflow survey 2021.<br/>
+            The data presented has been fetched from Arbetsförmedlingens API and consists of over 250 000 job ads. <br/>The data is stored in and aggregated from an hosted Elasticsearch instance.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim velit eget aliquam imperdiet. Phasellus eu leo ac ipsum luctus fringilla. Etiam finibus vestibulum lobortis. Etiam nec sapien elementum, convallis orci nec, pellentesque neque. Phasellus tellus justo, placerat non lectus eget, eleifend rutrum quam. Praesent quis bibendum mauris. Phasellus fringilla tortor eget ligula fermentum, a imperdiet libero molestie. Pellentesque laoreet ut orci sit amet faucibus. Donec condimentum mollis finibus. Ut finibus felis non ipsum faucibus dignissim.
+          </p>
         </b-col>
         <b-col></b-col>
       </b-row>
       <b-row class="text-center">
         <b-col></b-col>
         <b-col cols="8">
+          <div>
+              <b-button pill size="sm" variant="primary">2016-2021</b-button>
+              <b-button pill size="sm" variant="secondary">Annual basis</b-button>
+          </div>
           <div class="chartbox">
             <LineChart/>
           </div>
@@ -45,5 +57,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.btn {
+  margin: 5px;
 }
 </style>
