@@ -7,7 +7,7 @@
 <script>
 import VueApexCharts from 'vue-apexcharts'
 import axios from 'axios'
-import countAllYears from '../queries/count_all_years.js'
+import { countAllYears } from '../queries/count_all_years.js'
 
 export default {
   name: 'LineChart',
@@ -24,10 +24,10 @@ export default {
       data: countAllYears
     })
       .then(response => (this.series = response.data.aggregations.langs.buckets.map(
-        lang => (
+        language => (
           {
-            name: lang.key,
-            data: lang.lang.buckets.map(month => month.doc_count)
+            name: language.key,
+            data: language.lang.buckets.map(month => month.doc_count)
           }
         ))
       ))

@@ -10,6 +10,9 @@
       <b-row class="text-center">
         <b-col></b-col>
         <b-col cols="8">
+          <div class="chartbox">
+            <LineChart/>
+          </div>
         </b-col>
         <b-col></b-col>
       </b-row>
@@ -24,10 +27,12 @@
 </template>
 
 <script>
+import LineChart from './components/LineChart.vue'
 
 export default {
   name: 'App',
   components: {
+    LineChart
   }
 }
 </script>
