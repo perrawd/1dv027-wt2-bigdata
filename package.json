@@ -1,5 +1,6 @@
 {
   "name": "assignment-wt2-big-data",
+  "author": "Per Rawdin <pr222iw@student.lnu.se>",
   "version": "0.1.0",
   "private": true,
   "scripts": {
