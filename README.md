@@ -1,4 +1,4 @@
-# 1DV027 Assignment WT1 OAuth
+# 1DV027 Assignment WT2 Big Data
 Per Rawdin <per.rawdin@student.lnu.se>
 
 Trends and amount of job ads for the most popular web development technologies
@@ -8,7 +8,7 @@ The presented data has been gathered from Arbetsförmedlingens API and is made u
 The data is stored in and aggregated from an hosted Elasticsearch instance.
 
 ## 🌍 URL
-```https://rawdin.se/wt2```
+[https://rawdin.se/wt2](https://rawdin.se/wt2)
 
 ## 🚀 Technologies used
 - Vue.js
@@ -27,8 +27,8 @@ The data is stored in and aggregated from an hosted Elasticsearch instance.
 
 ```/src/App.vue``` Main entry point of the application. 
 
-```src/components/LineChart.vue``` LineChart component. Fetches data from Elasticsearch and presents it in a linechart.
+```/src/components/LineChart.vue``` LineChart component. Fetches data from Elasticsearch and presents it in a linechart.
 
-```src/queries/count_all_years.js``` File containing query for retrieving count of documents per year for all languages.
+```/src/queries/count_all_years.js``` File containing query for retrieving count of documents per year for all languages.
 
-```src/utils/data-loader.js``` Script that fetches data from API and ingest into elasticsearch.
+```/src/utils/data-loader.js``` Script that fetches data from API and ingest into elasticsearch.
