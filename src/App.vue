@@ -4,13 +4,15 @@
       <b-row class="header text-center">
         <b-col></b-col>
         <b-col cols="8">
-          <h2>#wpjobb</h2>
+          <h2>#wpjobb 💼</h2>
           <p>
-            Trends and amount of job ads published in the swedish job market between 2016-2021 for the <br/>most popular web development technologies according to StackOverflow survey 2021.<br/>
-            The data presented has been fetched from Arbetsförmedlingens API and consists of over 250 000 job ads. <br/>The data is stored in and aggregated from an hosted Elasticsearch instance.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim velit eget aliquam imperdiet. Phasellus eu leo ac ipsum luctus fringilla. Etiam finibus vestibulum lobortis. Etiam nec sapien elementum, convallis orci nec, pellentesque neque. Phasellus tellus justo, placerat non lectus eget, eleifend rutrum quam. Praesent quis bibendum mauris. Phasellus fringilla tortor eget ligula fermentum, a imperdiet libero molestie. Pellentesque laoreet ut orci sit amet faucibus. Donec condimentum mollis finibus. Ut finibus felis non ipsum faucibus dignissim.
+            Trends and amount of job ads for the most popular web development technologies
+            <br/>published in the swedish job market between 2016-2021.
+            <br/>The data consists of job ads for the top 10 most popular technologies
+            <br/>according to <b-link href="https://insights.stackoverflow.com/survey/2021#technology-most-popular-technologies" target="_blank">StackOverflow Developer Survey 2021</b-link> with the
+            <br/>addition of the popular frameworks and libraries: React, Angular and Vue.js.
+            <br/>The presented data has been gathered from Arbetsförmedlingens API and is made up of over 250 000 job ads.
+            <br/>The data is stored in and aggregated from an hosted Elasticsearch instance.
           </p>
         </b-col>
         <b-col></b-col>
@@ -19,7 +21,7 @@
         <b-col></b-col>
         <b-col cols="8">
           <div>
-              <b-button pill size="sm" variant="primary">2016-2021</b-button>
+              <b-button pill size="sm" variant="primary">2016 - 2021</b-button>
           </div>
           <div class="chartbox">
             <LineChart/>
