@@ -1,4 +1,5 @@
 <template>
+  <!-- Main page layout -->
   <div id="app">
     <b-container class="bv-row">
       <b-row class="header text-center">
@@ -54,6 +55,13 @@
 </template>
 
 <script>
+/**
+ *
+ * App component.
+ *
+ * @author Per Rawdin <per.rawdin@student.lnu.se>
+ * @version 1.0.0
+ */
 import LineChart from './components/LineChart.vue'
 
 export default {
