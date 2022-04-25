@@ -44,7 +44,8 @@ export default {
         },
         xaxis: {
           categories: [2016, 2017, 2018, 2019, 2020, 2021]
-        }
+        },
+        colors: ['#B2E1B8', '#70D6FF', '#94BDE9', '#B8A3D3', '#FF70A6', '#FF4751', '#FF6F61', '#521600', '#FFD670', '#E9FF70', '#399345', '#046DC8', '#F29602']
       },
       series: null
     }
