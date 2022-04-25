@@ -1,6 +1,9 @@
 <template>
   <div v-if="series" class='linechart'>
-    <apexcharts type='line' :options='chartOptions' :series='series'></apexcharts>
+    <apexcharts type='line' :options='chartOptions' :series='series'/>
+  </div>
+  <div v-else class="d-flex justify-content-center mb-3 loading">
+    <b-spinner/>
   </div>
 </template>
 
